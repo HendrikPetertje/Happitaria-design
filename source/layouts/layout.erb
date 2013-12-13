@@ -14,6 +14,14 @@
   </head>
   
   <body class="<%= page_classes %>">
+  <div id="login-user">
+    <%= link_to "", "login" %>
+  </div>
+  <div id="header" class="container">
+    <div class="innercontainer">
+      <%= link_to image_tag('images/default/header.jpg', :class => "header-images", :alt => "Happitaria"), "/" %>
+    </div>
+  </div>
     <%= yield %>
   </body>
 </html>

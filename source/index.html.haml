@@ -2,3 +2,28 @@
 title: Welcome to Middleman
 ---
 
+#pages-home-container.container
+	.inner-container
+		.short-explain
+			In mei van het jaar 2014 hopen studenten en vrijwilligers een heus restaurant te openen in de binnenstad van het culturele Leeuwarden. 
+			%br/ 
+			Meer weten of zelf iets doen?
+			Klik op de tegels hieronder om meer te lezen of je in te schrijven!
+		.tiles-container
+			.block.infotile
+				= link_to "","info"
+			.block.helptile
+				= link_to "", "help"
+			.block.sponsortile
+				= link_to "", "sponsor"
+			.block.housingtile
+				= link_to "", "housing"
+			.block.newstile
+				= link_to "", "news"
+
+.pre-load
+	= image_tag "home/infotile-hover.png"
+	= image_tag "home/helptile-hover.png"
+	= image_tag "home/sponsortile-hover.png"
+	= image_tag "home/housingtile-hover.png"
+	= image_tag "home/newstile-hover.png"
